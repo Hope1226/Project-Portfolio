@@ -1,0 +1,97 @@
+/* reset default style */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* main portfolio container */
+.portfolio-container {
+  height: 100vh;
+  background: #1C1A19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
+}
+
+/* Toolbar and logo section */
+.main-header {
+  background: #3C3A39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.logo,
+.nav-bar-icon {
+  padding: 10px 10px;
+}
+
+.logo h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #ffff;
+}
+
+/* headline section */
+.headline {
+  height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.headline >* {
+  padding: 5px 10px;
+}
+
+.headline hgroup h1 {
+  color: #FF6B00;
+  font-family: 'Roboto' serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.headline hgroup h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #ffff;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.headline p {
+  font-family: 'Roboto', sans-serif;
+  color: #ffff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.headline-footer {
+  padding: 20px 0;
+}
+
+.headline-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headline-footer a {
+  display: block;
+  padding: 0 10px;
+}
