@@ -59,7 +59,7 @@ html {
 
 .headline hgroup h1 {
   color: #ff6b00;
-    font-family: 'Roboto', serif;
+  font-family: 'Crete Round', serif;
   font-weight: 500;
   font-size: 56px;
   line-height: 64px;
@@ -94,4 +94,8 @@ html {
 .headline-footer a {
   display: block;
   padding: 0 10px;
+}
+
+a:hover {
+  cursor: pointer;
 }
