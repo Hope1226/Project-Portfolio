@@ -18,20 +18,20 @@ html {
 /* main portfolio container */
 .portfolio-container {
   height: 100vh;
-  background: #1C1A19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
+  background: #1c1a19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
 }
 
 /* Toolbar and logo section */
 .main-header {
-  background: #3C3A39;
+  background: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo,
@@ -53,13 +53,13 @@ html {
   align-items: center;
 }
 
-.headline >* {
+.headline > * {
   padding: 5px 10px;
 }
 
 .headline hgroup h1 {
-  color: #FF6B00;
-  font-family: 'Roboto' serif;
+  color: #ff6b00;
+    font-family: 'Roboto', serif;
   font-weight: 500;
   font-size: 56px;
   line-height: 64px;
