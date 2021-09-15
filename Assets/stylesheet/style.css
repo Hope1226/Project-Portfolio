@@ -22,7 +22,7 @@ html {
 }
 
 /* Toolbar and logo section */
-.main-header {
+.main-navigation {
   background: #3c3a39;
   display: flex;
   justify-content: space-between;

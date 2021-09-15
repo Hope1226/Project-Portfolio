@@ -14,12 +14,17 @@ This project has been created within the frames of the Microverse curriculum for
 
 ## Live Demo
 
-N/A
+[Hope Portfolio](https://hope1226.github.io/Project-Portfolio/)
 
 
 ## Getting Started
 
-N/A
+To get a local copy up and running follow these simple example steps.
+
+## Setup
+
+- Clone this repo locally
+- Run index.html file in your browser
 
 
 
