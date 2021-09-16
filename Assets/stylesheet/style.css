@@ -17,7 +17,6 @@ html {
 
 /* main portfolio container */
 .portfolio-container-headline {
-  height: 100vh;
   background: #1c1a19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
   overflow: scroll;
 }
@@ -28,7 +27,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -99,4 +98,168 @@ html {
 
 a:hover {
   cursor: pointer;
+}
+
+/* works section */
+
+.portfolio-works-container {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+/* works section > header  */
+
+.works-header {
+  padding: 150px 0 50px 0;
+  border-bottom: 1px solid #1c1a19;
+}
+
+.works-header h1 {
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+/* works section > multi-post-stories */
+
+.multi-post-stories > * {
+  display: block;
+}
+
+.multi-post-stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 10px;
+  padding-top: 100px;
+}
+
+.multi-post-stories img {
+  width: 100%;
+  height: 100%;
+}
+
+.multi-post-stories h2 {
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px 0;
+}
+
+.multi-post-stories p {
+  color: #091e42;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.multi-post-stories .multi-post-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.multi-post-navigation ul li {
+  padding-right: 20px;
+}
+
+.multi-post-stories .multi-post-navigation ul a{
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #8993a4;
+  color: #091e42;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.multi-post-stories .multi-post-btn {
+  justify-self: start;
+  padding: 10px 5px;
+  border: none;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+/* work section > prof-art */
+.prof-art > * {
+  display: block;
+}
+
+.prof-art {
+  background: url("../images/background/works-background/Placeholder-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr;
+  grid-template-rows: 3fr 2fr 1fr 1fr;
+  align-items: end;
+  padding-top: 50px;
+}
+
+.prof-art h2 {
+  padding: 0 20px;
+  color: #fff;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+} 
+
+.prof-art p {
+  padding: 0 20px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.prof-art .prof-art-navigation {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.prof-art ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.prof-art ul li {
+  padding-right: 10px;
+}
+
+.prof-art ul a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  background: #ffffff46;
+}
+
+.prof-art .prof-art-btn {
+  align-self: stretch;
+  padding: 10px 5px;
+  border: none;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
 }
