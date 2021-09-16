@@ -239,7 +239,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 3fr 2fr 1fr 1fr;
   align-items: end;
   padding-top: 50px;
