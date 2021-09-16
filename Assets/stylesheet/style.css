@@ -16,9 +16,10 @@ html {
 }
 
 /* main portfolio container */
-.portfolio-container {
+.portfolio-container-headline {
   height: 100vh;
   background: #1c1a19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
+  overflow: scroll;
 }
 
 /* Toolbar and logo section */
