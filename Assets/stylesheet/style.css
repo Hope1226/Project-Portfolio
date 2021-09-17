@@ -221,11 +221,31 @@ a:hover {
 .multi-post-stories .multi-post-btn {
   justify-self: start;
   padding: 10px 5px;
-  border: none;
+  border: 1px solid transparent;
   background: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
+}
+
+/* multi-post-btn states */
+
+.multi-post-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.multi-post-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.multi-post-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 /* work section > prof-art */
@@ -279,6 +299,27 @@ a:hover {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
+  border: 1px solid transparent;
+}
+
+/* prof-art-btn states */
+
+.prof-art-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.prof-art-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.prof-art-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 /* About me section */
@@ -324,6 +365,26 @@ a:hover {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
+}
+
+/* about-section-btn states */
+
+.about-section-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.about-section-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.about-section-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 /* Section about > section skills */
