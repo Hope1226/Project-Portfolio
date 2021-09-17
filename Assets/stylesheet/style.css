@@ -1,4 +1,5 @@
 /* reset default style */
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,18 +17,20 @@ html {
 }
 
 /* main portfolio container */
-.portfolio-container {
-  height: 100vh;
+
+.portfolio-container-headline {
   background: #1c1a19 url("../images/background/headline-background/Group.svg") 100% 100% no-repeat;
+  overflow: scroll;
 }
 
 /* Toolbar and logo section */
+
 .main-navigation {
   background: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +49,7 @@ html {
 }
 
 /* headline section */
+
 .headline {
   height: 100vh;
   padding: 0 10px;
@@ -55,6 +59,23 @@ html {
 
 .headline > * {
   padding: 5px 10px;
+}
+
+.works-header h1 {
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.about-section-header h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
 }
 
 .headline hgroup h1 {
@@ -98,4 +119,304 @@ html {
 
 a:hover {
   cursor: pointer;
+}
+
+/* works section */
+
+.portfolio-works-container {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-gap: 20px;
+  padding: 150px 20px;
+}
+
+/* works section > header  */
+
+.works-header {
+  border-bottom: 1px solid #1c1a19;
+}
+
+/* works section > multi-post-stories */
+
+.multi-post-stories > * {
+  display: block;
+}
+
+.multi-post-stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 10px;
+  padding-top: 100px;
+}
+
+.multi-post-stories img {
+  width: 100%;
+  height: 100%;
+}
+
+.multi-post-stories h2 {
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px 0;
+}
+
+.multi-post-stories p {
+  color: #091e42;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.prof-art ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.multi-post-stories .multi-post-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.multi-post-navigation ul li {
+  padding-right: 20px;
+}
+
+.prof-art ul a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  background: #ffffff46;
+}
+
+.multi-post-stories .multi-post-navigation ul a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #8993a4;
+  color: #091e42;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.multi-post-stories .multi-post-btn {
+  justify-self: start;
+  padding: 10px 5px;
+  border: 1px solid transparent;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+/* multi-post-btn states */
+
+.multi-post-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.multi-post-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.multi-post-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+/* work section > prof-art */
+
+.prof-art > * {
+  display: block;
+}
+
+.prof-art {
+  background: url("../images/background/works-background/Placeholder-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 2fr 1fr 1fr;
+  align-items: end;
+  padding-top: 50px;
+}
+
+.prof-art h2 {
+  padding: 0 20px;
+  color: #fff;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.prof-art p {
+  padding: 0 20px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.prof-art .prof-art-navigation {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.prof-art ul li {
+  padding-right: 10px;
+}
+
+.prof-art .prof-art-btn {
+  align-self: stretch;
+  padding: 10px 5px;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  border: 1px solid transparent;
+}
+
+/* prof-art-btn states */
+
+.prof-art-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.prof-art-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.prof-art-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+/* About me section */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  padding: 0 20px;
+  background: #1c1a19 url("../images/background/About-background/Group.svg") 100% 29% no-repeat;
+}
+
+/* about section > about header */
+
+.about-section-header > * {
+  display: block;
+}
+
+.about .about-section-header {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 150px 0;
+  align-items: end;
+  grid-gap: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.about-section-header p {
+  font-family: 'Roboto', sans-serif;
+  color: #ffff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-section-header .about-section-btn {
+  justify-self: start;
+  align-self: start;
+  padding: 10px 5px;
+  border: none;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+/* about-section-btn states */
+
+.about-section-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.about-section-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.about-section-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+/* Section about > section skills */
+
+.skills {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.skills .skill {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.skill-1 {
+  background: url("../images/icons/About-icons/Rectangle\ 1.svg") 50px 50% no-repeat;
+}
+
+.skill-2 {
+  background: url("../images/icons/About-icons/Rectangle\ 2.svg") 40px 50% no-repeat;
+}
+
+.skill-3 {
+  background: url("../images/icons/About-icons/Rectangle\ 3.svg") 100px 50% no-repeat;
+}
+
+.skills .inside-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 42.57px;
 }
