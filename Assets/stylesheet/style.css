@@ -176,8 +176,8 @@ a:hover {
 
 .prof-art ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   align-items: center;
 }
 
@@ -187,14 +187,18 @@ a:hover {
 
 .multi-post-stories .multi-post-navigation ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   padding: 10px 0;
 }
 
 .multi-post-navigation ul li {
   padding-right: 20px;
+  float: left;
+  margin: 15px 0;
 }
+
+.prof-art ul li
 
 .prof-art ul a {
   text-decoration: none;
@@ -205,6 +209,7 @@ a:hover {
   padding: 10px;
   border: none;
   background: #ffffff46;
+
 }
 
 .multi-post-stories .multi-post-navigation ul a {
