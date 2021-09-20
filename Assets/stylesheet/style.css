@@ -198,7 +198,9 @@ a:hover {
   margin: 15px 0;
 }
 
-.prof-art ul li
+.prof-art ul li {
+  float: left;
+}
 
 .prof-art ul a {
   text-decoration: none;
@@ -209,6 +211,7 @@ a:hover {
   padding: 10px;
   border: none;
   background: #ffffff46;
+  
 
 }
 
