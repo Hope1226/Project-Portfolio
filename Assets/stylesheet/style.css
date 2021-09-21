@@ -420,3 +420,28 @@ a:hover {
   color: #fff;
   line-height: 42.57px;
 }
+
+/* Form section */
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.form-container {
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 20px;
+}
+
+.form-container h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #172b4d;
+  text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+
+}
