@@ -443,7 +443,6 @@ a:hover {
   text-align: center;
   line-height: 44px;
   font-weight: 700;
-
 }
 
 .form-container form {
@@ -451,12 +450,18 @@ a:hover {
   flex-direction: column;
 }
 
-
 .form-container form input {
   margin: 10px 0;
   padding: 8px;
   border: none;
-  
+  color: #979493;
+  font-size: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.form-container form input:focus {
+ border-bottom: 1px solid #ff6b00;
+ outline: none;
 }
 
 .form-container textarea {
@@ -466,6 +471,7 @@ a:hover {
   padding: 4px;
   border: none;
 }
+
  .submit-btn { 
   justify-self: start;
   align-self: center;
@@ -475,4 +481,16 @@ a:hover {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+ }
+
+ .form-footer ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+   border-top: 1px solid grey;
+ }
+
+ .form-footer ul a {
+   padding: 0 15px;
  }
