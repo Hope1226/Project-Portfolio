@@ -484,13 +484,33 @@ a:hover {
   border: none;
 }
 
-.submit-btn { 
-   justify-self: start;
-   align-self: center;
-   padding: 12px 10px;
-   border: none;
-   background: #ff6b00;
-   color: #fff;
-   font-family: 'Inter', sans-serif;
-   font-weight: 500;
+.submit-btn {
+  justify-self: start;
+  align-self: center;
+  padding: 12px 10px;
+  border: 1px solid transparent;
+  background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* submit btn states */
+
+.submit-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  cursor: pointer;
+}
+
+.submit-btn:focus {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid transparent;
+}
+
+.submit-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
