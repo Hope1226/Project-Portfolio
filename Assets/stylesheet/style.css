@@ -64,7 +64,6 @@ html {
   font-size: 15px;
   padding: 0 20px;
   font-weight: 600;
-
 }
 
 /* headline section */
@@ -455,7 +454,6 @@ a:hover {
   margin-right: 10px;
 }
 
-
 .skills .inside-list li {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
@@ -541,7 +539,7 @@ a:hover {
 
 /* header */
 
-@media (min-width: 720px)  {
+@media (min-width: 720px) {
   .desctop-only {
     display: flex;
   }
@@ -565,8 +563,8 @@ a:hover {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "navigation content"
-    "navigation content";
+      "navigation content"
+      "navigation content";
   }
 
   .headline-heder .headline-footer {
@@ -603,11 +601,10 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-    "image details"
-    "image details"
-    "image details"
-    "image details"
-    ;
+      "image details"
+      "image details"
+      "image details"
+      "image details";
     grid-gap: 20px;
     align-items: start;
     align-content: start;
@@ -642,7 +639,7 @@ a:hover {
     grid-row: 4;
   }
 
-  .prof-dashboard  {
+  .prof-dashboard {
     background: url("../images/background/works-background/desktop-prof-art-bg2.png") no-repeat;
     background-size: cover;
   }
@@ -683,7 +680,6 @@ a:hover {
   .form-container {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr;
-    grid-gap: 20px;
     padding: 100px 80px;
     grid-gap: 50px;
   }
