@@ -381,14 +381,17 @@ a:hover {
 }
 
 .about .about-section-header {
+  padding: 0 20px;
+  background:  url("../images/background/About-background/Group.svg") 100% 93% no-repeat;
+}
+
+.about-section-header .about-header-content {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 150px 20px;
   align-items: end;
   grid-gap: 20px;
   border-bottom: 1px solid #fff;
-  background:  url("../images/background/About-background/Group.svg") 100% 93% no-repeat;
-  
 }
 
 .about-section-header p {
@@ -487,7 +490,7 @@ a:hover {
   border: none;
   color: #979493;
   font-size: 15px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 .form-container form input:focus {
@@ -584,6 +587,10 @@ a:hover {
     padding: 5px 0;
   }
 
+  .portfolio-works-container {
+    padding: 150px 80px;
+  }
+
   .works-header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -643,5 +650,62 @@ a:hover {
   .prof-portfolio {
     background: url("../images/background/works-background/desktop-prof-art-bg3.png") no-repeat;
     background-size: cover;
+  }
+
+  .about .about-section-header {
+    padding: 0 0 0 80px;
+    background: url("../images/background/DT-background/DT-aboutme-bg.svg") 100% 50% no-repeat;
+  }
+
+  .about-section-header .about-header-content {
+    padding: 150px 700px 150px 0;
+  }
+
+  .skills {
+    padding: 150px 80px;
+  }
+
+  .skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skills .skill {
+    justify-content: flex-start;
+  }
+
+  .skills .inside-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 100px 80px;
+    grid-gap: 50px;
+  }
+
+  .form-container h1 {
+    justify-self: start;
+    text-align: start;
+  }
+
+  .form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 20px;
+  }
+
+  .form-container form textarea {
+    grid-column: 1 / -1;
+    margin: 2px 0;
+  }
+
+  .form-container form input[type="email"] {
+    grid-column: 1 / -1;
   }
 }

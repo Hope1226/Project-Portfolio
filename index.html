@@ -261,14 +261,16 @@
     <section class="about">
 
       <header class="about-section-header">
-        <h1>About me</h1>
-        <p>Hello I’m a software developer! I can help you build a product , 
-          feature or website Look through some of my work and experience! 
-          If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.
-        </p>
-        <button type="button" class="about-section-btn">Get My Resume</button>
-      </header>
+        <div class="about-header-content">
+          <h1>About me</h1>
+          <p>Hello I’m a software developer! I can help you build a product , 
+            feature or website Look through some of my work and experience! 
+            If you like what you see and have a project you need coded, 
+            don’t hestiate to contact me.
+          </p>
+          <button type="button" class="about-section-btn">Get My Resume</button>
+        </div>
+       </header>
 
       <section class="skills">
         <ul>
@@ -319,8 +321,9 @@
         <form 
           action="https://formspree.io/f/xyylobaj"
           method="POST">
-          <input type="text"  name="userName" id="userName" required maxlength="30" placeholder="Enter Your Name"> 
-          <input type="email" name="userEmail" id="userEmail" required placeholder="Enter Your Email">
+          <input type="text"  name="userFirstName" id="userFirstName" required maxlength="30" placeholder="Full Name"> 
+          <input class="desctop-only" type="text"  name="userLastName" id="userLastName" required maxlength="30" placeholder="Last Name"> 
+          <input type="email" name="userEmail" id="userEmail" required placeholder="Email address">
           <textarea name="message" id="message" maxlength="500" required placeholder="Enter your message here"></textarea>
           <button class="submit-btn" type="submit">Get in touch</button>
         </form>
