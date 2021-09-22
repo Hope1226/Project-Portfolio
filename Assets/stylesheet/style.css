@@ -381,7 +381,7 @@ a:hover {
 
 .about .about-section-header {
   padding: 0 20px;
-  background:  url("../images/background/About-background/Group.svg") 100% 93% no-repeat;
+  background: url("../images/background/About-background/Group.svg") 100% 93% no-repeat;
 }
 
 .about-section-header .about-header-content {
@@ -562,7 +562,7 @@ a:hover {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
       "navigation content"
       "navigation content";
   }
@@ -631,7 +631,6 @@ a:hover {
 
   .main-prof-art > * {
     display: none;
-    
   }
 
   .main-prof-art button {
