@@ -348,8 +348,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
-  padding: 0 20px;
-  background: #1c1a19 url("../images/background/About-background/Group.svg") 100% 29% no-repeat;
+  background: #1c1a19;
 }
 
 /* about section > about header */
@@ -361,10 +360,12 @@ a:hover {
 .about .about-section-header {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 150px 0;
+  padding: 150px 20px;
   align-items: end;
   grid-gap: 20px;
   border-bottom: 1px solid #fff;
+  background:  url("../images/background/About-background/Group.svg") 100% 93% no-repeat;
+  
 }
 
 .about-section-header p {
@@ -420,19 +421,14 @@ a:hover {
   font-weight: 700;
   color: #fff;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
-.skill-1 {
-  background: url("../images/icons/About-icons/Rectangle\ 1.svg") 50px 50% no-repeat;
+.skills .skill img {
+  margin-right: 10px;
 }
 
-.skill-2 {
-  background: url("../images/icons/About-icons/Rectangle\ 2.svg") 40px 50% no-repeat;
-}
-
-.skill-3 {
-  background: url("../images/icons/About-icons/Rectangle\ 3.svg") 100px 50% no-repeat;
-}
 
 .skills .inside-list li {
   font-family: 'Inter', sans-serif;
