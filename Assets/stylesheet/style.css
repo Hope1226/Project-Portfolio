@@ -53,8 +53,9 @@ html {
 .desctop-only {
   list-style: none;
   display: none;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  
 }
 
 .desctop-only a {
@@ -62,8 +63,17 @@ html {
   font-family: 'Inter', sans-serif;
   color: #fff;
   font-size: 15px;
-  padding: 0 20px;
+  padding: 20px 20px;
   font-weight: 600;
+  transition-property: background, color, border, border-radius;
+  transition-duration: 1.5s, 1.5s, 1.5s;
+}
+
+.desctop-only a:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  border-radius: 5px;
 }
 
 /* headline section */
