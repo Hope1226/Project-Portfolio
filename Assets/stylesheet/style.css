@@ -65,15 +65,14 @@ html {
   font-size: 15px;
   padding: 20px 20px;
   font-weight: 600;
-  transition-property: background, color, border, border-radius;
-  transition-duration: 1.5s, 1.5s, 1.5s;
+  transition-property: color;
+  transition-duration: 1.5s;
 }
 
 .desctop-only a:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
+ 
   color: #f55800;
-  border-radius: 5px;
+  
 }
 
 /* headline section */
@@ -196,6 +195,12 @@ a:hover {
 .multi-post-stories img {
   width: 100%;
   height: 100%;
+  transition-duration: 1.5s;
+}
+
+.multi-post-stories img:hover {
+  transform: scale(1.05);
+  
 }
 
 .multi-post-stories h2 {
