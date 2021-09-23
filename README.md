@@ -5,6 +5,9 @@
 > Portfolio-Project-Hope
 
 
+![screenshot](Assets/images/background/README/project-screen.png)
+
+
 This project has been created within the frames of the Microverse curriculum for the purpose of creating personal portfolio website.
 
 ## Built With
