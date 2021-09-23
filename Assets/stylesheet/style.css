@@ -539,7 +539,7 @@ a:hover {
 
 /* header */
 
-@media (min-width: 720px) {
+@media (min-width: 1000px) {
   .desctop-only {
     display: flex;
   }
