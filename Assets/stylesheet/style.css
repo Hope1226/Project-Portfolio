@@ -79,6 +79,11 @@ html {
   padding: 5px 10px;
 }
 
+.headline-content {
+  max-width: 80%;
+  padding-top: 50px;
+}
+
 .works-header h1 {
   text-align: center;
   font-weight: 400;
