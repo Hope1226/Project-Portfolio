@@ -265,7 +265,7 @@ a:hover {
   justify-self: start;
   padding: 10px 5px;
   border: 1px solid transparent;
-  background: #ff6b00;
+  background: #fc5e02;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
@@ -337,7 +337,7 @@ a:hover {
 .prof-art .prof-art-btn {
   align-self: stretch;
   padding: 10px 5px;
-  background: #ff6b00;
+  background: #ee6401;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
@@ -407,7 +407,7 @@ a:hover {
   align-self: start;
   padding: 10px 5px;
   border: none;
-  background: #ff6b00;
+  background: #e96201;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 900;
@@ -486,7 +486,7 @@ a:hover {
   margin: 10px 0;
   padding: 8px;
   border: none;
-  color: #979493;
+  color: #636160;
   font-size: 15px;
   border-bottom: 1px solid #dbd8d7;
 }
@@ -509,7 +509,7 @@ a:hover {
   align-self: center;
   padding: 12px 10px;
   border: 1px solid transparent;
-  background: #ff6b00;
+  background: #e96100;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
