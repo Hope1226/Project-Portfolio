@@ -26,19 +26,34 @@
         gtag('js', new Date());
        gtag('config', 'G-8JBDZTMFBC');
   </script>
+  <script src="Script/script.js" defer></script>
   <title>Hope's portfolio</title>
 </head>
 <body>
+  <section class="mob-navigation" id="mob-navigation">
+    <a href="#" class="closeBtn" id="closeBtn"><span>x</span></a>
+    <ul class="">
+      <li>
+        <a class="nav-btn" href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a class="nav-btn" href="#about">About</a>
+      </li>
+      <li>
+        <a class="nav-btn" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </section>
   <!-- main portfolio container -->
-  <section class="portfolio-container-headline">
+  <section class="portfolio-container-headline" >
     <!-- header section with toolbar -->
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation flex-container">
         <section class="logo">
           <h3>Umid Ustabaev</h3>
         </section>
         <section class="nav-bar-icon mob-only">
-          <a href="#"><img src="Assets/images/icons/toolbar/Union.svg" alt="Mobile menu icon"></a>
+          <a href="#" id="menuBtn"><img src="Assets/images/icons/toolbar/Union.svg" alt="Mobile menu icon"></a>
         </section>
         <ul class="nav-main desctop-only">
           <li>
@@ -57,7 +72,7 @@
       </nav>
     </header>
     <!-- headline section -->
-    <section class="headline">
+    <section class="headline flex-container">
       <div class="headline-content">
         <header class="headline-heder">
           <hgroup>
@@ -71,7 +86,7 @@
             coded, don’t hestiate to contact me.
           </p>
           <section class="headline-footer">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">
                   <img src="Assets/images/icons/headline-social/social-github.svg" alt="Githup">
@@ -104,7 +119,7 @@
     </section>
   </section>
     <!-- Works section -->
-    <section class="portfolio-works-container">
+    <section class="portfolio-works-container" id="portfolio">
       <header class="works-header">
         <h1>My Recent Works</h1>
         <div class="line desctop-only"></div>
@@ -118,7 +133,7 @@
           took a standard dummy text.
         </p>
         <nav class="multi-post-navigation">
-          <ul>
+          <ul class="flex-container">
             <li>
               <a href="#">CSS</a>
             </li>
@@ -144,7 +159,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">html</a>
               </li>
@@ -165,7 +180,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">html</a>
               </li>
@@ -186,7 +201,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">html</a>
               </li>
@@ -207,7 +222,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">html</a>
               </li>
@@ -228,7 +243,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container">
               <li>
                 <a href="#">html</a>
               </li>
@@ -249,7 +264,7 @@
              no accounts or sign-ups required. has been the industry's standard
           </p>
           <nav class="prof-art-navigation">
-            <ul>
+            <ul class="flex-container"> 
               <li>
                 <a href="#">html</a>
               </li>
@@ -266,7 +281,7 @@
       </section>
     </section>
     <!-- About-me section -->
-    <section class="about">
+    <section class="about" id="about">
 
       <header class="about-section-header">
         <div class="about-header-content">
@@ -283,7 +298,7 @@
       <section class="skills">
         <ul>
           <li>
-            <div class="skill skill-1">
+            <div class="skill flex-container skill-1">
               <img src="Assets/images/icons/About-icons/Rectangle_1.svg" alt="">
               <h4>Language</h4>
             </div>
@@ -295,7 +310,7 @@
             </ul>
           </li>
           <li>
-            <div class="skill skill-2">
+            <div class="skill flex-container skill-2">
               <img src="Assets/images/icons/About-icons/Rectangle_2.svg" alt="">
               <h4>Frameworks</h4>
             </div>
@@ -308,7 +323,7 @@
             </ul>
           </li>
           <li>
-            <div class="skill skill-3">
+            <div class="skill flex-container skill-3">
               <img src="Assets/images/icons/About-icons/Rectangle_3.svg" alt="">
               <h4>Skills</h4>
             </div>
@@ -323,12 +338,12 @@
 
     </section>
     <!-- form section -->
-    <section class="form">
+    <section class="form" id="contact">
       <div class="form-container">
         <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
         <form 
           action="https://formspree.io/f/xyylobaj"
-          method="POST">
+          method="POST" class="flex-container">
           <input  aria-label="First Name" type="text"  name="userFirstName" id="userFirstName" required maxlength="30" placeholder="Full Name"> 
           <input aria-label="Last Name" class="desctop-only" type="text"  name="userLastName" id="userLastName" required maxlength="30" placeholder="Last Name"> 
           <input aria-label="Email" type="email" name="userEmail" id="userEmail" required placeholder="Email address">
@@ -338,7 +353,7 @@
       </div>
       <footer class="form-footer">
         <nav class="footer-navigation">
-          <ul>
+          <ul class="flex-container">
             <li>
               <a href="#">
                 <img src="Assets/images/icons/footer-social/footer_git.svg" alt="Github">
