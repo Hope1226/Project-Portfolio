@@ -23,6 +23,7 @@ html {
 
 /* Toolbar and logo section */
 
+
 .mob-navigation {
   display: none;
   position: absolute;
@@ -63,6 +64,14 @@ html {
 .mob-navigation ul li {
   padding: 20px 0;
   border-bottom: 1px solid #6f6c6b;
+}
+
+.menu-open {
+  display: flex;
+}
+
+.menu-close {
+  display: none;
 }
 
 .main-navigation {
@@ -587,13 +596,7 @@ a:hover {
 
 @media (min-width: 1000px) {
 
-  .menu-open {
-    display: flex;
-  }
-  
-  .menu-close {
-    display: none;
-  }
+
 
   .desctop-only {
     display: flex;
