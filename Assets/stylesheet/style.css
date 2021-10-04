@@ -25,6 +25,10 @@ html {
 
 /* Toolbar and logo section */
 
+.flex-container {
+  display: flex;
+}
+
 .mob-navigation {
   display: none;
   position: absolute;
@@ -91,7 +95,6 @@ a:hover {
 
 .main-navigation {
   background: #3c3a39;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
@@ -127,7 +130,6 @@ a:hover {
 .headline {
   height: 100vh;
   padding: 0 10px;
-  display: flex;
   align-items: center;
 }
 
@@ -196,7 +198,6 @@ a:hover {
 
 .headline-footer ul {
   list-style: none;
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -259,7 +260,6 @@ a:hover {
 
 .prof-art ul {
   list-style: none;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
 }
@@ -270,7 +270,6 @@ a:hover {
 
 .form-footer ul {
   list-style: none;
-  display: flex;
   justify-content: center;
   padding: 20px 0;
   border-top: 1px solid grey;
@@ -278,7 +277,6 @@ a:hover {
 
 .multi-post-stories .multi-post-navigation ul {
   list-style: none;
-  display: flex;
   justify-content: flex-start;
   padding: 10px 0;
 }
@@ -356,6 +354,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 2fr 1fr 1fr;
+  grid-gap: 10px;
   align-items: end;
   padding-top: 300px;
 }
@@ -498,7 +497,6 @@ a:hover {
   font-weight: 700;
   color: #fff;
   padding: 20px 0;
-  display: flex;
   justify-content: center;
 }
 
@@ -531,7 +529,6 @@ a:hover {
 }
 
 .form-container form {
-  display: flex;
   flex-direction: column;
 }
 
