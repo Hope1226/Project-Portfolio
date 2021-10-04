@@ -24,13 +24,13 @@ html {
 /* Toolbar and logo section */
 
 .mob-navigation {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  display: none;
   flex-direction: column;
   padding: 20px;
   background-color: #3C3A39;
@@ -586,8 +586,9 @@ a:hover {
 /* header */
 
 @media (min-width: 1000px) {
+
   .menu-open {
-  display: flex;
+    display: flex;
   }
   
   .menu-close {
