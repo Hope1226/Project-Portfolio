@@ -1,0 +1,1 @@
+const openBtn = document.querySelector("#menuBtn")
