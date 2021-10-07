@@ -168,6 +168,13 @@ a:hover {
   font-weight: 700;
 }
 
+.form-container .account-action {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  border: none;
+}
+
 .headline hgroup h1 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -914,5 +921,10 @@ a:hover {
 
   .form-container form input[type="email"] {
     grid-column: 1 / -1;
+  }
+
+  .form-container .account-action {
+    grid-column: 1 / -1;
+    grid-template-columns: auto 1fr;
   }
 }
