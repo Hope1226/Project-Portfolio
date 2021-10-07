@@ -3,6 +3,7 @@ const closeBtn = document.querySelector('#closeBtn');
 const mobMenu = document.querySelector('#mob-navigation');
 const multiPostProjectCard = document.querySelector('.multi-post-stories');
 const projectContainer = document.querySelector('.prof-art-container');
+const body = document.querySelector('body');
 
 function createOpenClass(element, className) {
   element.classList.add(className);
@@ -111,7 +112,7 @@ multiPostProjectCard.innerHTML = `
     </li>
   </ul>
 </nav>
-<button type="button" class="multi-post-btn">See Project</button>`;
+<button type="button" id="multiPostBtn" class="multi-post-btn">See Project</button>`;
 
 
 for (let i = 0; i < projectList.length; i++) {
@@ -132,11 +133,64 @@ for (let i = 0; i < projectList.length; i++) {
               </li>
             </ul>
           </nav>
-          <button type="button" class="prof-art-btn">See Project</button>
+          <button type="button" id="${i}" class="prof-art-btn">See Project</button>
         </section>`
 
         document.querySelector('.prof-art').setAttribute('style', 
         `background: url(${projectList[i].image}); background-repeat: no-repeat; background-size: cover;`)
 };
 
-function createPopUp (name, image, techs, desc, live = 'See Live', source = 'See Source');
+function createPopUp (element, name, image, techs, desc, live = 'See Live', source = 'See Source'){
+    element.innerHTML += `
+    <section class="popup-container">
+      <div class="popup-content">
+        <header class="popup-header">
+         <h1 class="popup-heading">${name}</h1>
+        
+         </header>
+         <ul class="popup-list">
+           <li>
+            <a href="#">${techs[0]}</a>
+           </li>
+           <li>
+             <a href="#">${techs[1]}</a>
+           </li>
+           <li>
+             <a href="#">${techs[2]}</a>
+           </li>
+           <li>
+             <a href="#">${techs[3]}</a>
+           </li>
+         </ul>
+         <img src=${image} class="pop-image" alt="project demo">
+         <div class="popup-details">
+           <p class="popup-desc">${desc}</p>
+           <div class="popup-btn-group">
+             <a href="#" class="live">${live}</a>
+             <a href="#" class="source">${source}</a>
+           </div>
+         </div>
+      </div>
+    </section>` 
+    
+    const popCont = document.querySelector('.popup-container');
+    const header = document.querySelector('.popup-header');
+    const closePopBtn = document.createElement('button');
+    closePopBtn.textContent = 'x';
+    header.appendChild(closePopBtn);
+    closePopBtn.addEventListener('click', ()=>{
+      popCont.style.display = "none";
+    })
+
+    const multiPostBtn = document.getElementById('multiPostBtn');
+    multiPostBtn.addEventListener("click", ()=> {
+      popCont.style.display = "flex";
+    });
+}
+
+
+
+
+const multiPostBtn = document.getElementById('multiPostBtn');
+
+multiPostBtn.addEventListener("click", ()=> createPopUp (body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc));
