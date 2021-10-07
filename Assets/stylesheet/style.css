@@ -98,7 +98,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -300,6 +300,28 @@ a:hover {
   padding: 0 15px;
 }
 
+.popup-content .popup-list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+  border: 1px solid black;
+  background: #ffffff46;
+}
+
+.popup-content .popup-btn-group a {
+  text-decoration: none;
+  padding: 20px 20px;
+  padding-right: 35px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin-right: 10px;
+} 
+
 .multi-post-stories .multi-post-navigation ul a {
   text-decoration: none;
   width: 100%;
@@ -500,6 +522,12 @@ a:hover {
   justify-content: center;
 }
 
+.popup-content img {
+  width: 100%;
+  height: 100%;
+  grid-area: image;
+}
+
 .skills .skill img {
   margin-right: 10px;
 }
@@ -589,7 +617,7 @@ a:hover {
 
 .popup-container {
   position: fixed;
-  top:  0;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -599,6 +627,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .popup-container .popup-content {
@@ -608,27 +637,21 @@ a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
-  "header"
-  "links"
-   "image"
-   "content"
-   "btns" ;
+    "header"
+    "links"
+    "image"
+    "content"
+    "btns";
   background: white;
   padding: 20px 10px;
-}
-
-.popup-content img {
-  width: 100%;
-  height: 100%;
-  grid-area: image;
-
+  overflow-y: scroll;
 }
 
 .popup-content header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   grid-area: header;
 }
 
@@ -640,7 +663,7 @@ a:hover {
   font-weight: 700;
 }
 
-.popup-content header .popup-close-btn {
+.popup-content header button {
   border: none;
   background: transparent;
   color: rgb(104, 104, 104);
@@ -649,22 +672,13 @@ a:hover {
 
 .popup-content .popup-list {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-items: start;
+  justify-content: start;
   padding: 20px 0;
   grid-area: links;
-}
-
-.popup-content .popup-list a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px;
-  border: 1px solid black;
-  background: #ffffff46;
-  margin-right: 10px;
 }
 
 .popup-content p {
@@ -683,23 +697,9 @@ a:hover {
   grid-area: btns;
 }
 
-.popup-content .popup-btn-group a {
-  text-decoration: none;
-  padding: 20px 20px;
-  padding-right: 40px;
-  border: 1px solid transparent;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  margin-right: 10px;
-}
-
-
-
 .popup-btn-group .source {
   background: #e96100 url(../images/icons/popup-icons/GitHub.svg) 90% 50% no-repeat;
 }
-
 
 .popup-btn-group .live {
   background: #e96100 url(../images/icons/popup-icons/Export.svg) 90% 50% no-repeat;
@@ -711,15 +711,14 @@ a:hover {
 /* header */
 
 @media (min-width: 1000px) {
-
   .popup-container .popup-content {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: 
-    "header header"
-    "links links"
-    "image content"
-    "image btns";
+    grid-template-areas:
+      "header header"
+      "links links"
+      "image content"
+      "image btns";
     grid-gap: 10px;
   }
 
@@ -732,9 +731,8 @@ a:hover {
     grid-row: 3 / 4;
     grid-column: 1;
     justify-self: start;
-
   }
-  
+
   .popup-content .popup-list {
     grid-column: 1 / -1;
     grid-row: 2;
