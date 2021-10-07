@@ -9,8 +9,7 @@ lastName.value = '';
 userEmail.value = '';
 userMessage.value = '';
 
-function storeUserData(event) {
-  event.preventDefault();
+function storeUserData() {
   const user = {
     userFirstName: firstName.value,
     userLastName: lastName.value,
@@ -18,12 +17,10 @@ function storeUserData(event) {
     userTxtMsg: userMessage.value,
   };
 
-  userInfoForm.submit();
-
   localStorage.setItem('userData', JSON.stringify(user));
 }
 
-userInfoForm.addEventListener('submit', storeUserData);
+userInfoForm.addEventListener('focusout', storeUserData);
 
 const userObject = JSON.parse(localStorage.getItem('userData'));
 
