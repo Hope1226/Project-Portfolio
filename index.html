@@ -27,6 +27,7 @@
        gtag('config', 'G-8JBDZTMFBC');
   </script>
   <script src="Script/script.js" defer></script>
+  <script src="Script/validation.js" defer></script>
   <title>Hope's portfolio</title>
 </head>
 <body>
@@ -190,10 +191,13 @@
         <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
         <form 
           action="https://formspree.io/f/xyylobaj"
-          method="POST" class="flex-container">
+          method="POST" 
+          class="flex-container"
+          id="contactMeForm">
           <input  aria-label="First Name" type="text"  name="userFirstName" id="userFirstName" required maxlength="30" placeholder="Full Name"> 
           <input aria-label="Last Name" class="desctop-only" type="text"  name="userLastName" id="userLastName" required maxlength="30" placeholder="Last Name"> 
           <input aria-label="Email" type="email" name="userEmail" id="userEmail" required placeholder="Email address">
+          <span id="errorMessage"></span>
           <textarea aria-label="Input message" name="message" id="message" maxlength="500" required placeholder="Enter your message here"></textarea>
           <button class="submit-btn" type="submit">Get in touch</button>
         </form>
