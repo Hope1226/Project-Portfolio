@@ -7,11 +7,10 @@ const userMessage = document.querySelector('#message');
 
 let user = {};
 
-function storeUserData(obj) {
-  obj.userName = firstName.value;
-  obj.userLastName = lastName.value;
-  obj.userEmail = userEmail.value;
-  obj.userTxtMsg = userMessage.value;
+function storeUserData(event) {
+  event.preventDefault();
+
+
 }
 
 
@@ -20,5 +19,6 @@ userInfoForm.addEventListener('submit', storeUserData(user));
 let userData = JSON.stringify(user);
 
 localStorage.setItem('userData', userData);
+ const dataFromStorage = localStorage.getItem('userData');
 
 
