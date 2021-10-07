@@ -133,7 +133,7 @@ for (let i = 0; i < projectList.length; i++) {
               </li>
             </ul>
           </nav>
-          <button type="button" id="${i}" class="prof-art-btn">See Project</button>
+          <button type="button" id= ${i} class="prof-art-btn">See Project</button>
         </section>`
 
         document.querySelector('.prof-art').setAttribute('style', 
@@ -194,3 +194,15 @@ function createPopUp (element, name, image, techs, desc, live = 'See Live', sour
 const multiPostBtn = document.getElementById('multiPostBtn');
 
 multiPostBtn.addEventListener("click", ()=> createPopUp (body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc));
+
+const profArtBtn0 = document.getElementById("0");
+const profArtBtn1 = document.getElementById("1");
+const profArtBtn2 = document.getElementById("2");
+const profArtBtn3 = document.getElementById("3");
+const profArtBtn4 = document.getElementById("4");
+
+profArtBtn0.addEventListener("click", ()=> createPopUp (body, projectList[0].name, projectList[0].image, projectList[0].techs, projectList[0].desc));
+profArtBtn1.addEventListener("click", ()=> createPopUp (body, projectList[1].name, projectList[1].image, projectList[1].techs, projectList[1].desc));
+profArtBtn2.addEventListener("click", ()=> createPopUp (body, projectList[2].name, projectList[2].image, projectList[2].techs, projectList[2].desc));
+profArtBtn3.addEventListener("click", ()=> createPopUp (body, projectList[3].name, projectList[3].image, projectList[3].techs, projectList[3].desc));
+profArtBtn4.addEventListener("click", ()=> createPopUp (body, projectList[4].name, projectList[4].image, projectList[4].techs, projectList[4].desc));
