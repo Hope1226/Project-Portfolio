@@ -25,6 +25,8 @@ const projectMultipost = {
   image: 'Assets/images/background/works-images/multi-art-section-img.svg',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   techs: ['html', 'bootstrap', 'Ruby'],
+  live: 'https://hope1226.github.io/Project-Portfolio/',
+  source: 'https://github.com/Hope1226/Project-Portfolio',
 };
 
 const profArtProject = {
@@ -32,7 +34,8 @@ const profArtProject = {
   image: 'Assets/images/background/works-background/desctop-prof-art-bg.png',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   techs: ['html', 'bootstrap', 'Ruby'],
-
+  live: 'https://hope1226.github.io/Project-Portfolio/',
+  source: 'https://github.com/Hope1226/Project-Portfolio',
 };
 
 const projectList = [
@@ -41,30 +44,40 @@ const projectList = [
     image: 'Assets/images/background/works-background/desktop-prof-art-bg2.png',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     techs: ['html', 'bootstrap', 'Ruby'],
+    live: 'https://hope1226.github.io/Project-Portfolio/',
+    source: 'https://github.com/Hope1226/Project-Portfolio',
   },
   {
     name: 'Website Protfolio',
     image: 'Assets/images/background/works-background/desktop-prof-art-bg3.png',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     techs: ['CSS', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://hope1226.github.io/Project-Portfolio/',
+    source: 'https://github.com/Hope1226/Project-Portfolio',
   },
   {
     name: 'Professional Art Printing Data',
     image: 'Assets/images/background/works-background/desctop-prof-art-bg.png',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     techs: ['html', 'bootstrap', 'Ruby'],
+    live: 'https://hope1226.github.io/Project-Portfolio/',
+    source: 'https://github.com/Hope1226/Project-Portfolio',
   },
   {
     name: 'Data Dashboard Healthcares',
     image: 'Assets/images/background/works-background/desktop-prof-art-bg2.png',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     techs: ['html', 'bootstrap', 'Ruby'],
+    live: 'https://hope1226.github.io/Project-Portfolio/',
+    source: 'https://github.com/Hope1226/Project-Portfolio',
   },
   {
     name: 'Website Protfolio',
     image: 'Assets/images/background/works-background/desktop-prof-art-bg3.png',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     techs: ['CSS', 'html', 'bootstrap', 'Ruby'],
+    live: 'https://hope1226.github.io/Project-Portfolio/',
+    source: 'https://github.com/Hope1226/Project-Portfolio',
   },
 
 ];
@@ -133,7 +146,7 @@ for (let i = 0; i < projectList.length; i += 1) {
     `background: url(${projectList[i].image}); background-repeat: no-repeat; background-size: cover;`);
 }
 
-function createPopUp(element, name, image, techs, desc, live = 'See Live', source = 'See Source') {
+function createPopUp(element, name, image, techs, desc, live, source) {
   element.innerHTML += `
     <section class="popup-container">
       <div class="popup-content">
@@ -156,8 +169,8 @@ function createPopUp(element, name, image, techs, desc, live = 'See Live', sourc
          <div class="popup-details">
            <p class="popup-desc">${desc}</p>
            <div class="popup-btn-group">
-             <a href="#" class="live">${live}</a>
-             <a href="#" class="source">${source}</a>
+             <a href=${live} target="_blank" class="live">See Live</a>
+             <a href=${source} target="_blank" class="source">See Source</a>
            </div>
          </div>
       </div>
@@ -175,13 +188,13 @@ function createPopUp(element, name, image, techs, desc, live = 'See Live', sourc
   const profArtBtn3 = document.getElementById('3');
   const profArtBtn4 = document.getElementById('4');
 
-  multiPostBtn.addEventListener('click', () => createPopUp(body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc));
-  profArtMainBtn.addEventListener('click', () => createPopUp(body, profArtProject.name, profArtProject.image, profArtProject.techs, profArtProject.desc));
-  profArtBtn0.addEventListener('click', () => createPopUp(body, projectList[0].name, projectList[0].image, projectList[0].techs, projectList[0].desc));
-  profArtBtn1.addEventListener('click', () => createPopUp(body, projectList[1].name, projectList[1].image, projectList[1].techs, projectList[1].desc));
-  profArtBtn2.addEventListener('click', () => createPopUp(body, projectList[2].name, projectList[2].image, projectList[2].techs, projectList[2].desc));
-  profArtBtn3.addEventListener('click', () => createPopUp(body, projectList[3].name, projectList[3].image, projectList[3].techs, projectList[3].desc));
-  profArtBtn4.addEventListener('click', () => createPopUp(body, projectList[4].name, projectList[4].image, projectList[4].techs, projectList[4].desc));
+  multiPostBtn.addEventListener('click', () => createPopUp(body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc, projectMultipost.live, projectMultipost.source));
+  profArtMainBtn.addEventListener('click', () => createPopUp(body, profArtProject.name, profArtProject.image, profArtProject.techs, profArtProject.desc, profArtProject.live, profArtProject.source));
+  profArtBtn0.addEventListener('click', () => createPopUp(body, projectList[0].name, projectList[0].image, projectList[0].techs, projectList[0].desc, projectList[0].live, projectList[0].source));
+  profArtBtn1.addEventListener('click', () => createPopUp(body, projectList[1].name, projectList[1].image, projectList[1].techs, projectList[1].desc, projectList[1].live, projectList[1].source));
+  profArtBtn2.addEventListener('click', () => createPopUp(body, projectList[2].name, projectList[2].image, projectList[2].techs, projectList[2].desc, projectList[2].live, projectList[2].source));
+  profArtBtn3.addEventListener('click', () => createPopUp(body, projectList[3].name, projectList[3].image, projectList[3].techs, projectList[3].desc, projectList[3].live, projectList[3].source));
+  profArtBtn4.addEventListener('click', () => createPopUp(body, projectList[4].name, projectList[4].image, projectList[4].techs, projectList[4].desc, projectList[4].live, projectList[4].source));
 }
 
 const multiPostBtn = document.getElementById('multiPostBtn');
@@ -192,10 +205,10 @@ const profArtBtn2 = document.getElementById('2');
 const profArtBtn3 = document.getElementById('3');
 const profArtBtn4 = document.getElementById('4');
 
-multiPostBtn.addEventListener('click', () => createPopUp(body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc));
-profArtMainBtn.addEventListener('click', () => createPopUp(body, profArtProject.name, profArtProject.image, profArtProject.techs, profArtProject.desc));
-profArtBtn0.addEventListener('click', () => createPopUp(body, projectList[0].name, projectList[0].image, projectList[0].techs, projectList[0].desc));
-profArtBtn1.addEventListener('click', () => createPopUp(body, projectList[1].name, projectList[1].image, projectList[1].techs, projectList[1].desc));
-profArtBtn2.addEventListener('click', () => createPopUp(body, projectList[2].name, projectList[2].image, projectList[2].techs, projectList[2].desc));
-profArtBtn3.addEventListener('click', () => createPopUp(body, projectList[3].name, projectList[3].image, projectList[3].techs, projectList[3].desc));
-profArtBtn4.addEventListener('click', () => createPopUp(body, projectList[4].name, projectList[4].image, projectList[4].techs, projectList[4].desc));
+multiPostBtn.addEventListener('click', () => createPopUp(body, projectMultipost.name, projectMultipost.image, projectMultipost.techs, projectMultipost.desc, projectMultipost.live, projectMultipost.source));
+profArtMainBtn.addEventListener('click', () => createPopUp(body, profArtProject.name, profArtProject.image, profArtProject.techs, profArtProject.desc, profArtProject.live, profArtProject.source));
+profArtBtn0.addEventListener('click', () => createPopUp(body, projectList[0].name, projectList[0].image, projectList[0].techs, projectList[0].desc, projectList[0].live, projectList[0].source));
+profArtBtn1.addEventListener('click', () => createPopUp(body, projectList[1].name, projectList[1].image, projectList[1].techs, projectList[1].desc, projectList[1].live, projectList[1].source));
+profArtBtn2.addEventListener('click', () => createPopUp(body, projectList[2].name, projectList[2].image, projectList[2].techs, projectList[2].desc, projectList[2].live, projectList[2].source));
+profArtBtn3.addEventListener('click', () => createPopUp(body, projectList[3].name, projectList[3].image, projectList[3].techs, projectList[3].desc, projectList[3].live, projectList[3].source));
+profArtBtn4.addEventListener('click', () => createPopUp(body, projectList[4].name, projectList[4].image, projectList[4].techs, projectList[4].desc, projectList[4].live, projectList[4].source));
