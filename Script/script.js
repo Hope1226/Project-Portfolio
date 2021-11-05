@@ -21,12 +21,12 @@ navBtns.forEach((button) => {
 });
 
 const projectMultipost = {
-  name: 'Multi-Post Stories',
-  image: 'Assets/images/background/works-images/multi-art-section-img.svg',
-  desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  techs: ['html', 'bootstrap', 'Ruby'],
-  live: 'https://hope1226.github.io/Project-Portfolio/',
-  source: 'https://github.com/Hope1226/Project-Portfolio',
+  name: 'Stand-up show webpage',
+  image: 'Assets/images/background/works-images/multi-art-section-img.png',
+  desc: "The project Stand Up Show is an informative website built on JavaScript, HTML/CSS, which provides information regarding the Global Stand Up shows around the world for the physical year. ",
+  techs: ['html', 'JavaScript', 'CSS'],
+  live: 'https://hope1226.github.io/CAPSTONE-Stand-up-show-web/',
+  source: 'https://github.com/Hope1226/CAPSTONE-Stand-up-show-web',
 };
 
 const profArtProject = {
@@ -34,7 +34,7 @@ const profArtProject = {
   image: 'Assets/images/background/works-background/desctop-prof-art-bg.png',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   techs: ['html', 'bootstrap', 'Ruby'],
-  live: 'https://hope1226.github.io/Project-Portfolio/',
+  live: 'https://hope1226.github.io/CAPSTONE-Stand-up-show-web/',
   source: 'https://github.com/Hope1226/Project-Portfolio',
 };
 
